@@ -36,25 +36,16 @@ img {
   display: block;
 }
 
-/* AI 生成角标 */
-.ai-badge {
-  position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 1000;
-  padding: 4px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
-  font-size: 12px;
-  color: var(--white);
-  background: rgba(255, 255, 255, 0.15);
+/* 站点 Logo */
+.site-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--bili-blue);
+  letter-spacing: -0.5px;
+  cursor: pointer;
 }
-
-.ai-badge.dark {
-  color: var(--text-secondary);
-  border-color: rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.8);
-}
+.site-logo.light { color: var(--white); }
+.navbar .site-logo { color: var(--white); margin-right: 8px; }
 
 /* 按钮 */
 .btn {
@@ -94,15 +85,6 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.navbar .logo-box {
-  padding: 4px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 6px;
-  font-size: 12px;
-  color: var(--white);
-  margin-right: 16px;
 }
 
 .navbar .brand {
