@@ -60,12 +60,6 @@ const App = {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + page)?.classList.add('active');
 
-    const badge = document.getElementById('ai-badge');
-    if (badge) {
-      badge.classList.toggle('dark', ['search', 'profile'].includes(page));
-      badge.style.display = page === 'upload' ? 'none' : '';
-    }
-
     document.title = this.titles[page];
     if (pushHash) location.hash = page;
     window.scrollTo(0, 0);
