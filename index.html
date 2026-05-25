@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 - B站视频导引网站</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <span class="ai-badge" id="ai-badge">AI 生成</span>
+
+  <!-- 登录 -->
+  <section id="page-login" class="page active">
+    <div class="login-page">
+      <h1 class="login-title">B站视频导引网站</h1>
+      <div class="login-card">
+        <form id="login-form">
+          <input type="text" placeholder="账号" required>
+          <input type="password" placeholder="密码" required>
+          <div class="login-options">
+            <label><input type="checkbox"> 记住我</label>
+            <a href="#">忘记密码?</a>
+            <a href="#" class="social-login">使用社交账号登录</a>
+          </div>
+          <button type="submit" class="btn btn-primary">登录</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 首页 -->
+  <section id="page-home" class="page">
+    <nav class="navbar">
+      <span class="logo-box">AI生成</span>
+      <span class="brand" data-nav="home">首页</span>
+      <span data-nav="nav" style="color:white;font-size:14px;margin-right:16px;cursor:pointer">导航</span>
+      <span data-nav="upload" style="color:white;font-size:14px;cursor:pointer">上传</span>
+      <div class="nav-links">
+        <a href="#">动画</a><a href="#">番剧</a><a href="#">国创</a><a href="#">音乐</a>
+        <a href="#">舞蹈</a><a href="#">游戏</a><a href="#">科技</a><a href="#">生活</a>
+        <a href="#">鬼畜</a><a href="#">时尚</a>
+      </div>
+      <div class="nav-right">
+        <span data-nav="search" style="cursor:pointer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+        <span data-nav="profile" style="cursor:pointer">影视</span>
+      </div>
+    </nav>
+    <div class="category-bar">
+      <span class="pill active">首页</span>
+      <span class="pill">动画</span><span class="pill">番剧</span><span class="pill">国创</span>
+      <span class="pill">音乐</span><span class="pill">舞蹈</span><span class="pill">游戏</span>
+      <span class="pill">知识</span><span class="pill">科技</span><span class="pill">生活</span>
+      <span class="pill">鬼畜</span><span class="pill">时尚</span><span class="pill">娱乐</span><span class="pill">影视</span>
+    </div>
+    <div class="video-grid">
+      <div class="video-card wide" data-nav="video">
+        <div class="thumb" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><span class="play-icon">▶</span><span class="duration">12:30</span></div>
+        <div class="info"><div class="title">【原神】3.8版本新角色全面解析与攻略</div><div class="tags"><span class="tag blue">原创</span><span class="tag yellow">合集</span></div><div class="meta">播放量 128.5万 · 2024-08-15</div></div>
+      </div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"><span class="play-icon">▶</span><span class="duration">02:30</span></div><div class="info"><div class="title">Python入门到精通教程</div><div class="meta">12.3万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"><span class="play-icon">▶</span><span class="duration">15:20</span></div><div class="info"><div class="title">【教程】Vue3 全家桶实战项目</div><div class="meta">8.6万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#fa709a,#fee140)"><span class="play-icon">▶</span><span class="duration">08:45</span></div><div class="info"><div class="title">原神新版本深渊满星攻略</div><div class="meta">45.2万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><span class="play-icon">▶</span><span class="duration">22:10</span></div><div class="info"><div class="title">机器学习入门通晓指南</div><div class="meta">23.1万</div></div></div>
+      <div class="video-card wide" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#667eea,#764ba2)"><span class="play-icon">▶</span><span class="duration">45:00</span></div><div class="info"><div class="title">【合集】前端开发从入门到精通完整路线</div><div class="tags"><span class="tag yellow">合集</span></div><div class="meta">播放量 89.3万 · 2024-07-20</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#ff9a9e,#fecfef)"><span class="play-icon">▶</span><span class="duration">06:30</span></div><div class="info"><div class="title">美食探店：山间美味</div><div class="meta">5.8万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#ffecd2,#fcb69f)"><span class="play-icon">▶</span><span class="duration">18:22</span></div><div class="info"><div class="title">数据分析实战：Pandas 技巧</div><div class="meta">16.7万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#89f7fe,#66a6ff)"><span class="play-icon">▶</span><span class="duration">11:05</span></div><div class="info"><div class="title">React Hooks 深度解析</div><div class="meta">9.2万</div></div></div>
+      <div class="video-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#fddb92,#d1fdff)"><span class="play-icon">▶</span><span class="duration">25:40</span></div><div class="info"><div class="title">国创动画推荐 TOP10</div><div class="meta">31.4万</div></div></div>
+    </div>
+    <div class="pagination">
+      <button class="page-btn">‹</button><button class="page-btn active">1</button><button class="page-btn">2</button><button class="page-btn">3</button><button class="page-btn">›</button>
+    </div>
+    <footer class="footer"><a href="#">关于我们</a> | <a href="#">联系我们</a> | <a href="#">版权声明</a></footer>
+  </section>
+
+  <!-- 视频导航 -->
+  <section id="page-nav" class="page">
+    <div class="nav-page">
+      <div class="nav-container">
+        <div class="nav-header">
+          <span class="bili-logo">bilibili</span>
+          <h1>B站视频导航</h1>
+          <div class="icons">
+            <span class="avatar" data-nav="profile" style="cursor:pointer"></span>
+            <span>↻</span><span>−</span>
+          </div>
+        </div>
+        <form class="search-bar-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" placeholder="搜索你想要的视频...">
+        </form>
+        <div class="nav-columns">
+          <div class="nav-col">
+            <h3>热门视频</h3>
+            <div class="featured-video" data-nav="video"><span class="playing-tag">正在播放</span><div class="progress"><div class="progress-bar"></div></div></div>
+            <div class="sub-thumbs">
+              <div><div class="sub-thumb" style="background:linear-gradient(135deg,#43e97b,#38f9d7)" data-nav="video"></div><p>原神新版本攻略</p></div>
+              <div><div class="sub-thumb" style="background:linear-gradient(135deg,#fa709a,#fee140)" data-nav="video"></div><p>Python 编程教程</p></div>
+            </div>
+          </div>
+          <div class="nav-col">
+            <h3>番剧推荐</h3>
+            <div class="icon-grid">
+              <div class="icon-item">📁</div><div class="icon-item">🎮</div><div class="icon-item">🧭</div>
+              <div class="icon-item">📍</div><div class="icon-item">🛡️</div><div class="icon-item">💬</div>
+              <div class="icon-item">🏠</div><div class="icon-item">🎬</div><div class="icon-item">⏰</div>
+            </div>
+          </div>
+          <div class="nav-col">
+            <h3>UP主排行榜</h3>
+            <div class="rank-tabs"><span class="active">● 全部</span><span>影视</span><span>动画</span><span>生活</span></div>
+            <ul class="rank-list">
+              <li class="rank-item"><input type="radio" checked><div class="rank-avatar"></div><div class="rank-info"><div class="name">V5的厨房</div><div class="fans">粉丝: 123.4万</div></div>⋮</li>
+              <li class="rank-item"><input type="radio"><div class="rank-avatar" style="background:linear-gradient(135deg,#f093fb,#f5576c)"></div><div class="rank-info"><div class="name">山间美味</div><div class="fans">粉丝: 98.2万</div></div>⋮</li>
+              <li class="rank-item"><input type="radio"><div class="rank-avatar" style="background:linear-gradient(135deg,#ffecd2,#fcb69f)"></div><div class="rank-info"><div class="name">编程小能手</div><div class="fans">粉丝: 256.7万</div></div>⋮</li>
+              <li class="rank-item"><input type="radio"><div class="rank-avatar" style="background:linear-gradient(135deg,#89f7fe,#66a6ff)"></div><div class="rank-info"><div class="name">原神情报局</div><div class="fans">粉丝: 189.3万</div></div>⋮</li>
+              <li class="rank-item"><input type="radio"><div class="rank-avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"></div><div class="rank-info"><div class="name">科技前沿</div><div class="fans">粉丝: 76.5万</div></div>⋮</li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-footer-links"><a href="#">📋 关于我们</a> | <a href="#">❓ 使用帮助</a></div>
+      </div>
+      <p style="text-align:center;margin-top:16px"><span data-nav="home" style="color:var(--bili-blue);cursor:pointer">← 返回首页</span></p>
+    </div>
+  </section>
+
+  <!-- 视频播放 -->
+  <section id="page-video" class="page">
+    <div class="video-page-wrap">
+      <div class="video-container">
+        <nav class="video-nav-inner">
+          <span class="logo" data-nav="home" style="cursor:pointer">Python</span>
+          <div class="links"><span data-nav="home" style="cursor:pointer">首页</span><a href="#">动态</a><a href="#">课程 ▾</a></div>
+          <div class="user-area">
+            <span data-nav="search" style="cursor:pointer">🔍</span>
+            <div class="user-avatar"></div><span>某某某</span><span>▾</span><span>⋯</span>
+          </div>
+        </nav>
+        <div class="video-main">
+          <div>
+            <div class="player-section">
+              <div class="video-player">
+                <div class="overlay-text">学习了！UP讲得真清楚！</div>
+                <div class="player-controls"><span>▶</span><div class="progress"><div class="progress-fill"></div></div><span>05:32 / 45:00</span><span>🔊</span><span>⛶</span></div>
+              </div>
+              <div class="video-info-side">
+                <h2>【教程】Python入门到精通</h2>
+                <div class="up">UP主：编程小能手 <span class="tag-official">官方</span></div>
+                <ul class="meta-list"><li>👤 UP主：编程小能手</li><li># #Python #编程教程</li><li>▶ 播放量：123.4万</li><li>💬 弹幕量：12.3万</li></ul>
+                <div class="action-icons">👍 🪙 ⭐ ↗</div>
+              </div>
+            </div>
+            <div class="tags-section">
+              <div class="danmaku-tags"><span class="danmaku-tag">学习了！</span><span class="danmaku-tag">UP讲得真清楚！</span><span class="danmaku-tag">UP讲得真高超，一个字绝</span><span class="danmaku-tag">给你点赞要多讲点哦！</span></div>
+              <div class="danmaku-tags"><span class="danmaku-tag">#Python进阶技巧</span></div>
+              <p style="font-size:13px;color:var(--text-muted);margin-top:12px">评论区预览：这个教程讲得太好了，从零基础到实战项目都有涵盖...</p>
+            </div>
+            <div class="interaction-bar">
+              <button class="btn-like">👍 点赞：1.4万</button>
+              <button class="btn-coin">🪙 投币：2.3万</button>
+              <div class="stats"><span>⭐ 收藏：2.3万</span><span>↗ 分享：1.8万</span></div>
+            </div>
+          </div>
+          <aside class="sidebar">
+            <h3>相关推荐 <span style="font-size:12px;color:var(--text-muted)">更多 ›</span></h3>
+            <div class="rec-item" data-nav="video"><div class="rec-thumb" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"></div><div><div class="rec-title">Python进阶技巧</div><div class="rec-meta">UP主：编程小能手 | 2023.01.01</div></div></div>
+            <div class="rec-item" data-nav="video"><div class="rec-thumb" style="background:linear-gradient(135deg,#fa709a,#fee140)"></div><div><div class="rec-title">数据分析实战</div><div class="rec-meta">UP主：编程小能手 | 2023.02.15</div></div></div>
+            <div class="rec-item" data-nav="video"><div class="rec-thumb" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"></div><div><div class="rec-title">机器学习通晓</div><div class="rec-meta">UP主：编程小能手 | 2023.03.20</div></div></div>
+          </aside>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:16px"><span data-nav="home" style="color:var(--bili-blue);cursor:pointer">← 返回首页</span></p>
+    </div>
+  </section>
+
+  <!-- 个人中心 -->
+  <section id="page-profile" class="page">
+    <div class="profile-page-wrap">
+      <header class="profile-header">
+        <div class="avatar"></div>
+        <div class="info"><h2>bilibili用户 <span class="lv-badge">LV5</span></h2></div>
+        <div class="header-icons"><span>☰</span><span>ⓘ</span></div>
+      </header>
+      <div class="profile-card">
+        <div class="quick-actions">
+          <div class="quick-action"><div class="icon-box">📋</div><span>我的收藏</span></div>
+          <div class="quick-action"><div class="icon-box">📜</div><span>观看历史</span></div>
+          <div class="quick-action"><div class="icon-box">🛡️</div><span>创作中心</span></div>
+          <div class="quick-action"><div class="icon-box">💬</div><span>消息通知</span></div>
+        </div>
+        <section class="settings-section">
+          <h3>设置区</h3>
+          <button class="settings-btn"><span class="icon">❤</span> 账号安全</button>
+          <button class="settings-btn"><span class="icon">❤</span> 隐私设置</button>
+          <button class="settings-btn"><span class="icon">💬</span> 帮助中心</button>
+        </section>
+        <span class="back-link" data-nav="home">← 返回首页</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 搜索 -->
+  <section id="page-search" class="page">
+    <div class="search-page-wrap">
+      <div class="search-container">
+        <div class="search-header-row">
+          <div class="search-input-wrap">
+            <input type="text" placeholder="🔍 搜索结果" value="原神">
+            <button type="button" class="search-btn" data-nav="search">🔍</button>
+          </div>
+        </div>
+        <div class="search-tabs-row">
+          <div class="tabs"><span class="tab active">视频</span><span class="tab">番剧</span><span class="tab">电影</span></div>
+          <span style="font-size:13px;color:var(--text-muted)">共1234个结果</span>
+        </div>
+        <div class="search-grid">
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#f093fb,#f5576c)"><span class="play">▶</span><span class="time">23:45</span></div><div class="title">【原神】3.8版本全新内容解析！</div><div class="uploader"><div class="mini-avatar"></div>原神情报局<span class="date">2024-08-15</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"><span class="play">▶</span><span class="time">15:20</span></div><div class="title">【原神】深渊满星攻略详解</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"></div>游戏攻略君<span class="date">2024-08-10</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#fa709a,#fee140)"><span class="play">▶</span><span class="time">08:30</span></div><div class="title">原神新角色技能演示</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"></div>角色研究所<span class="date">2024-08-08</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#667eea,#764ba2)"><span class="play">▶</span><span class="time">32:10</span></div><div class="title">【原神】枫丹剧情全流程</div><div class="uploader"><div class="mini-avatar"></div>剧情解说员<span class="date">2024-07-28</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#89f7fe,#66a6ff)"><span class="play">▶</span><span class="time">12:05</span></div><div class="title">原神抽卡玄学指南</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#ffecd2,#fcb69f)"></div>欧皇日记<span class="date">2024-07-20</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#43e97b,#38f9d7)"><span class="play">▶</span><span class="time">18:45</span></div><div class="title">【原神】武器池分析推荐</div><div class="uploader"><div class="mini-avatar"></div>装备分析师<span class="date">2024-07-15</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#fddb92,#d1fdff)"><span class="play">▶</span><span class="time">25:00</span></div><div class="title">原神世界任务全收集</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#f093fb,#f5576c)"></div>探索达人<span class="date">2024-07-10</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#ff9a9e,#fecfef)"><span class="play">▶</span><span class="time">06:20</span></div><div class="title">原神同人动画精选</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#4facfe,#00f2fe)"></div>二创工坊<span class="date">2024-07-05</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)"><span class="play">▶</span><span class="time">40:15</span></div><div class="title">【原神】音乐OST全收录</div><div class="uploader"><div class="mini-avatar"></div>音乐收藏家<span class="date">2024-06-30</span></div></div>
+          <div class="search-card" data-nav="video"><div class="thumb" style="background:linear-gradient(135deg,#ffecd2,#fcb69f)"><span class="play">▶</span><span class="time">10:30</span></div><div class="title">原神表情包大合集</div><div class="uploader"><div class="mini-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2)"></div>梗图制造机<span class="date">2024-06-25</span></div></div>
+        </div>
+        <div class="search-pagination"><span style="font-size:13px;color:var(--text-muted)">🔍 1/5页</span><button class="btn btn-outline">上一页</button><button class="btn btn-primary">下一页</button></div>
+      </div>
+      <p style="text-align:center;margin-top:16px"><span data-nav="home" style="color:var(--bili-blue);cursor:pointer">← 返回首页</span></p>
+    </div>
+  </section>
+
+  <!-- 上传 -->
+  <section id="page-upload" class="page">
+    <div class="upload-page-wrap">
+      <nav class="upload-nav">
+        <div class="left">
+          <span class="logo-box">AI 生成</span>
+          <span class="brand">bilibili 视频导引</span>
+          <span class="brand">B视频上传</span>
+        </div>
+        <div class="links">
+          <span data-nav="home" style="cursor:pointer">首页</span>
+          <span class="active">上传</span>
+          <span data-nav="profile" style="cursor:pointer">我的 ▾</span>
+        </div>
+      </nav>
+      <main class="upload-main-area">
+        <div class="upload-card">
+          <button class="refresh-btn" type="button" title="重置">↻</button>
+          <div class="upload-zones">
+            <div class="upload-zone-left" id="drop-zone">
+              <div class="doc-icon">📄</div>
+              <input type="file" id="file-input" accept="video/*">
+              <button type="button" class="btn-select">选择文件</button>
+            </div>
+            <div class="upload-zone-right">
+              <div class="folder-graphic">📁</div>
+              <h3>拖拽文件到此处上传</h3>
+              <p>上传完成后可填写视频信息</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="upload-footer-bar">
+        <a href="#">服务条款</a> | <a href="#">服务协议</a> | <a href="#">隐私政策</a>
+      </footer>
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
