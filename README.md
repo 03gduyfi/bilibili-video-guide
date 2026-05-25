@@ -4,9 +4,9 @@
 
 ## 在线访问（GitHub Pages）
 
-部署后公开地址：
+**https://03gduyfi.github.io/bilibili-video-guide/**
 
-**`https://你的GitHub用户名.github.io/bilibili-video-guide/`**
+（7 个页面：登录、首页、视频导航、播放、个人中心、搜索、上传）
 
 ### 一键部署
 
